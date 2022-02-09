@@ -1,0 +1,6 @@
+This dataset includes two columns for the form of government variable - UFOG and Q1. 
+
+Q1 reflects actual responses to the survey question on form of government, while UFOG reflects ICMA's classification as of September 2019. 
+
+ICMA form of government records are based on extensive research, deliberation, and verification conducted by staff, 
+and are provided for reference given the significance of the variable.
