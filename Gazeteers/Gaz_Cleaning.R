@@ -66,13 +66,29 @@ IDs_2020 <- unique(gaz_2020$GEOID)
 IDs_2021 <- unique(gaz_2021$GEOID)
 
 ##### MERGING GAZ #####
-gaz <- rbind(#gaz_2010,
+gaz <- rbind(gaz_2010,
              gaz_2013, gaz_2014,
              gaz_2015, gaz_2016, gaz_2017,
              gaz_2018, gaz_2019, gaz_2020,
              gaz_2021)
 gaz <- gaz[order(gaz$GEOID),]
+write.csv(gaz, file = "gaz.csv")
 
+##### 3/7 Mapping Changes #####
+rm(list = ls())
+gaz <- read.csv("gaz.csv")
+gaz <- gaz %>% 
+  select(X, USPS, GEOID, ANSICODE, NAME, LSAD, year) %>% 
+  group_by(GEOID) %>% 
+  mutate(before_LSAD = lag(LSAD, order_by = GEOID)) %>% 
+  mutate(change = (LSAD != before_LSAD),
+         disinc = (LSAD == 57 & before_LSAD != 57))
+
+disincs2010s <- gaz %>% 
+  filter(disinc == TRUE)
+  
+write.csv(disincs2010s, "disincs2010s.csv")
+  
 ##### NEW/DROP CHANGES #####
 # 2010-2013
 new_IDs_2013 <- setdiff(IDs_2013, IDs_2010)
