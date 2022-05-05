@@ -8,3 +8,4 @@ Here's where I'll keep track of data, news findings, code, and other stuff for t
 - `Logistics` is where I keep any WashU or other paperwork necessary for the project.
 - `MFG Data` is where I keep Municipal Form of Government (MFG) Survey data. This will be kept private and is not to be circulated
 - `NE Gazateer [TEST]` is a folder where I tested R scripts on smaller samples of gazateer data
+- `2022S Causal Inference Project` is, not surprisingly, where I keep the materials for the Causal Inference Poster Project. Due to file size limitations, this does not include the ACS data; contact me if you need it (or just pull it yourself from https://data.census.gov/cedsci/
