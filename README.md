@@ -11,3 +11,4 @@ Here's where I'll keep track of data, news findings, code, and other stuff for t
 - `Ongoing Cases` is where I keep track of any ongoing real-life cases. This is primarily news coverage.
 - `Spring 2022` is where my Spring 2022 subprojects are, including the 2022 Causal Inference Poster Project
 - `Tigris` is my pilot work incorporating the `Tigris R` package to map these things out.
+- `Visualizations` are the code, various figures and visualizations I make throughout the summer.
