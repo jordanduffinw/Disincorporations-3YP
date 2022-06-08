@@ -103,8 +103,8 @@ map03 <- ggplot()+
   theme(axis.ticks.x = element_blank(),
         axis.ticks.y = element_blank(),
         axis.text = element_blank())
-  
 map03
+ggsave(filename = "map03.png", plot = map03)
 
 map04 <- ggplot()+
   # geom_polygon(data = countymap, aes(x = x, y = y, group = group),
@@ -123,8 +123,8 @@ map04 <- ggplot()+
   theme(axis.ticks.x = element_blank(),
         axis.ticks.y = element_blank(),
         axis.text = element_blank())
-
 map04
+ggsave(filename = "map04.png", plot = map04)
 
 ##### Tables #####
 # Frequency of attempts
