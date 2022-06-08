@@ -2,6 +2,7 @@
 Here's where I'll keep track of data, news findings, code, and other stuff for the Disincorporations 3YP.
 
 # Descriptions:
+- `ACS Data`is the American Community Survey data pulled from data.census.gov/cedsci/
 - `Disincorporation Data` is where I keep (1) a list of disincorporated places generated from the U.S. Census Gazateer files, (2), the list of dropped places from the same source (which may or may not be disincorporations)
 - `Gazateers` is where I keep (1) the raw U.S. Census Gazateer data and (2) the R scripts used to clean them
 - `Lit` is where I keep PDFs of all literature for the project, including things eventually not cited in the final product
